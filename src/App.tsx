@@ -1,11 +1,12 @@
 import './App.css'
+import MainLayout from '@layouts/MainLayouts'
 
 function App() {
 
   return (
-    <div className="">
-      test
-    </div>
+    <MainLayout>
+      test hanya est
+    </MainLayout>
   )
 }
 
