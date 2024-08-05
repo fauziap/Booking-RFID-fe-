@@ -9,16 +9,10 @@
     "strict": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "./src/*"
-      ],
-      "@layouts/*": [
-        "./src/Layouts/*"
-      ]
+      "@/*": ["./src/*"],
+      "@layouts/*": ["src/layouts/*"]
     },
     "noEmit": true
   },
-  "include": [
-    "vite.config.ts"
-  ]
+  "include": ["vite.config.ts"]
 }
