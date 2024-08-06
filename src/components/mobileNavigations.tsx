@@ -1,7 +1,7 @@
 
-
 const MobileNavigations = () => {
     return (
+        <>
         <div className="fixed w-screen bottom-0 bg-gray-300 p-3">
             <div className="grid grid-cols-4 gap-5">
                 <div className="col-span-1 flex justify-center">
@@ -21,6 +21,7 @@ const MobileNavigations = () => {
                 </div>
             </div>
         </div>
+        </>
     )
 }
 
