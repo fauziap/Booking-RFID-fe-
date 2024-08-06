@@ -8,8 +8,10 @@ export default defineConfig({
   plugins: [react(), tsconfigPaths()],
   resolve: {
     alias: {
-      '@': resolve(__dirname, 'src'),
-      '@layouts': resolve(__dirname, 'src/Layouts'),
+      'layouts': resolve(__dirname, 'src/layouts'),
+      'pages': resolve(__dirname, 'src/pages'),
+      'components': resolve(__dirname, 'src/components'),
+      'asset': resolve(__dirname, 'src/asset'),
     },
   },
 })
