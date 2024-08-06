@@ -14,21 +14,13 @@ import MainLayout from "../Layouts/MainLayouts";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import ParagrafJudul from "../components/ParagrafJudul";
 import ListGeneral from "../components/ListGeneral";
+import Header from "../components/Header";
 
 export const Profile = () => {
   return (
     <MainLayout>
-      <div>
-        <div className="flex justify-between items-center p-4 bg-white border-gray-200">
-          <button className="px-3 py-1 text-gray-600 hover:text-gray-800 rounded-lg border border-gray-300">
-            <FontAwesomeIcon icon={faAngleLeft} className="text-lg" />
-          </button>
-          <p className="text-lg font-semibold">Settings</p>
-          <button className="px-3 py-1 text-gray-600 hover:text-gray-800 rounded-lg border border-gray-300">
-            <FontAwesomeIcon icon={faEllipsisV} className="text-lg" />
-          </button>
-        </div>
-      </div>
+
+      <Header link={'/'} title={'Settings'}/>
 
       <div className="p-4">
         <div>
@@ -39,11 +31,6 @@ export const Profile = () => {
           title="Change Password"
           icon={faLock}
           link="/change-password"
-        />
-        <ListGeneral
-          title="Notification"
-          icon={faBell}
-          link="/notification-settings"
         />
         <ListGeneral
           title="Notification"
@@ -64,7 +51,7 @@ export const Profile = () => {
         <ListGeneral
           title="Logout"
           icon={faArrowRightFromBracket}
-          link="/help-support"
+          link="/logout"
           warna={"text-red-500"}
         />
       </div>

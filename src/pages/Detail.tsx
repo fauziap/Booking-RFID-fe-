@@ -10,19 +10,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import ParagrafJudul from "../components/ParagrafJudul";
 import Button from "../components/Button";
+import Header from "../components/Header";
 
 export const Detail = () => {
   return (
     <>
-      <div className="flex justify-between items-center p-4 bg-white border-gray-200">
-        <button className="px-3 py-1 text-gray-600 hover:text-gray-800 rounded-lg border border-gray-300">
-          <FontAwesomeIcon icon={faAngleLeft} className="text-lg" />
-        </button>
-        <p className="text-lg font-semibold">Detail</p>
-        <button className="px-3 py-1 text-gray-600 hover:text-gray-800 rounded-lg border border-gray-300">
-          <FontAwesomeIcon icon={faEllipsisV} className="text-lg" />
-        </button>
-      </div>
+      <Header link={'/'} title={'Detail'}/>
 
       <div className="p-4">
         <img src={Hotel} alt="Deskripsi Gambar" className="rounded-xl" />
@@ -89,7 +82,7 @@ export const Detail = () => {
         </div>
       </div>
 
-      <div className="px-4 mt-3">
+      <div className="px-4 mt-3 mb-10">
         <Button nama="Booking Now" warna="bg-blue-500" />
       </div>
     </>
