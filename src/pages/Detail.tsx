@@ -8,9 +8,9 @@ import {
   faStar,
   faWifi,
 } from "@fortawesome/free-solid-svg-icons";
-import ParagrafJudul from "../components/ParagrafJudul";
-import Button from "../components/Button";
-import Header from "../components/Header";
+import ParagrafJudul from "components/ParagrafJudul";
+import Button from "components/Button";
+import Header from "components/Header";
 
 export const Detail = () => {
   return (

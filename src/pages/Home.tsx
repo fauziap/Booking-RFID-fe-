@@ -1,7 +1,7 @@
-import AssetManagement from "../asset/AssetManagement";
-import ComponentManagement from "../components/ComponentManagement";
-import MobileNavigations from "../components/mobileNavigations";
-import MainLayout from "../Layouts/MainLayouts";
+import AssetManagement from "asset/AssetManagement";
+import ComponentManagement from "components/ComponentManagement";
+import MobileNavigations from "components/mobileNavigations";
+import MainLayout from "layouts/MainLayouts";
 
 function Home() {
   return (

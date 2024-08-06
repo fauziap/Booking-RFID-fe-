@@ -5,10 +5,10 @@ import {
   faQuestionCircle,
   faUser,
 } from "@fortawesome/free-solid-svg-icons";
-import MainLayout from "../Layouts/MainLayouts";
-import ParagrafJudul from "../components/ParagrafJudul";
-import ListGeneral from "../components/ListGeneral";
-import Header from "../components/Header";
+import MainLayout from "layouts/MainLayouts";
+import ParagrafJudul from "components/ParagrafJudul";
+import ListGeneral from "components/ListGeneral";
+import Header from "components/Header";
 
 export const Profile = () => {
   return (

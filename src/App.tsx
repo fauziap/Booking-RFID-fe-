@@ -1,8 +1,8 @@
 import { Route, Routes } from "react-router-dom";
-import Home from "./pages/Home.tsx";
-import { Detail } from "./pages/Detail.tsx";
-import { Profile } from "./pages/Profile.tsx";
-import EditProfile from "./pages/profile/EditProfile.tsx";
+import Home from "pages/Home.tsx";
+import { Detail } from "pages/Detail.tsx";
+import { Profile } from "pages/Profile.tsx";
+import EditProfile from "pages/profile/EditProfile.tsx";
 
 function App() {
   return (
