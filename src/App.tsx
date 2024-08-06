@@ -1,23 +1,16 @@
-import './App.css'
-import MainLayout from './layouts/mainLayouts'
-import MobileNavigations from './layouts/mobileNavigations'
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/Home.tsx";
+import { Detail } from "./pages/Detail.tsx";
+import { Profile } from "./pages/Profile.tsx";
 
 function App() {
-
   return (
-    <MainLayout>
-      <div className="p-3">
-        <h5 className="text-xl">
-          Hai, Selamat Datang
-        </h5>
-        <h3>
-          Nama Pengguna
-        </h3>
-      </div>
-
-      <MobileNavigations />
-    </MainLayout>
-  )
+    <Routes>
+      <Route path='/' element={<Home />} />
+      <Route path='/detail' element={<Detail />} />
+      <Route path='/profile' element={<Profile />} />
+    </Routes>
+  );
 }
 
-export default App
+export default App;
