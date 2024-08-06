@@ -1,8 +1,8 @@
 import './App.css'
 import AssetManagement from './asset/AssetManagement'
 import ComponentManagement from './components/ComponentManagement'
-import MainLayout from './layouts/MainLayouts'
-import MobileNavigations from './layouts/mobileNavigations'
+import MainLayout from './Layouts/MainLayouts'
+import MobileNavigations from './Layouts/mobileNavigations'
 
 function App() {
 
