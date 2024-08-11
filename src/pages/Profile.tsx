@@ -9,6 +9,7 @@ import MainLayout from "layouts/MainLayouts";
 import ParagrafJudul from "components/ParagrafJudul";
 import ListGeneral from "components/ListGeneral";
 import Header from "components/Header";
+import MobileNavigations from "components/mobileNavigations";
 
 export const Profile = () => {
   return (
@@ -20,13 +21,13 @@ export const Profile = () => {
         <div>
           <ParagrafJudul title="General" />
         </div>
-        <ListGeneral title="Edit Profile" icon={faUser} link="/edit-profile" />
-        <ListGeneral
+        <ListGeneral title="Edit Profile" icon={faUser} link="/edit-profile" warna={"text-black-500"} />
+        <ListGeneral warna={"text-black-500"}
           title="Change Password"
           icon={faLock}
           link="/change-password"
         />
-        <ListGeneral
+        <ListGeneral warna={"text-black-500"}
           title="Notification"
           icon={faBell}
           link="/notification-settings"
@@ -37,7 +38,7 @@ export const Profile = () => {
         <div>
           <ParagrafJudul title="Preferences" />
         </div>
-        <ListGeneral
+        <ListGeneral warna={"text-black-500"}
           title="Help & Support"
           icon={faQuestionCircle}
           link="/help-support"
@@ -49,7 +50,7 @@ export const Profile = () => {
           warna={"text-red-500"}
         />
       </div>
-
-    </MainLayout>
+      <MobileNavigations/>
+    </MainLayout> 
   );
 };
