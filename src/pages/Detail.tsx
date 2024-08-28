@@ -1,16 +1,14 @@
 import Hotel from "../assets/hotel.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faAngleLeft,
-  faEllipsisV,
   faLocationDot,
   faMugSaucer,
   faStar,
   faWifi,
 } from "@fortawesome/free-solid-svg-icons";
-import ParagrafJudul from "components/ParagrafJudul";
-import Button from "components/Button";
-import Header from "components/Header";
+import ParagrafJudul from "components/paragraf/ParagrafJudul";
+import Header from "components/header/Header";
+import ComponentManagement from "components/ComponentManagement";
 
 export const Detail = () => {
   return (
@@ -83,7 +81,7 @@ export const Detail = () => {
       </div>
 
       <div className="px-4 mt-3 mb-10">
-        <Button nama="Booking Now" warna="bg-blue-500" />
+        <ComponentManagement.SimpleButton nama="Booking Now" warna="bg-blue-500" />
       </div>
     </>
   );

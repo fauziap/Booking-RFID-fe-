@@ -1,5 +1,5 @@
 import { faCamera, faEnvelope, faUser, faUserCircle } from "@fortawesome/free-solid-svg-icons";
-import Header from "../../components/Header";
+import Header from "components/header/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const EditProfile = () => {
@@ -28,13 +28,13 @@ const EditProfile = () => {
                   className="absolute bottom-0 right-0 text-blue-500 text-xl bg-white rounded-full p-1"
                 />
               </label>
-              <input
+              {/* <input
                 type="file"
                 id="profilePic"
                 accept="image/*"
                 onChange=""
                 className="hidden"
-              />
+              /> */}
             </div>
           </div>
           <div className="space-y-4 ">
