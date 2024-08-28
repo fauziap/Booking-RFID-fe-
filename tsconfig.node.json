@@ -12,7 +12,7 @@
       "layouts/*": ["src/layouts/*"],
       "pages/*": ["src/pages/*"],
       "components/*": ["src/components/*"],
-      "asset/*": ["src/asset/*"],
+      "asset/*": ["src/assets/*"],
     },
     "noEmit": true
   },
