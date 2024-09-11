@@ -1,11 +1,10 @@
 import { faCamera, faEnvelope, faUser, faUserCircle } from "@fortawesome/free-solid-svg-icons";
-import Header from "components/header/Header";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import MainLayout from "layouts/MainLayouts";
 
 const EditProfile = () => {
   return (
-    <>
-      <Header link="/" title="Edit Profile" />
+    <MainLayout headerLink="/" headerTitle="Edit Profile">
       <div className="container mx-auto mt-5 p-4">
         <form className="space-y-4">
           <div className="flex items-center justify-center space-x-4 mb-4">
@@ -74,17 +73,17 @@ const EditProfile = () => {
               </div>
             </div>
           </div>
-    <div className="bottom-0">
-          <button
-            type="submit"
-            className="bg-blue-500 py-3 px-4 bottom-0 rounded-lg font-semibold text-lg text-white w-full"
-          >
-            Save Changes
-          </button>
-    </div>
+          <div className="bottom-0">
+            <button
+              type="submit"
+              className="bg-blue-500 py-3 px-4 bottom-0 rounded-lg font-semibold text-lg text-white w-full"
+            >
+              Save Changes
+            </button>
+          </div>
         </form>
       </div>
-    </>
+    </MainLayout>
   );
 };
 

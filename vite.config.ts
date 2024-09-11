@@ -11,7 +11,8 @@ export default defineConfig({
       'layouts': resolve(__dirname, 'src/layouts'),
       'pages': resolve(__dirname, 'src/pages'),
       'components': resolve(__dirname, 'src/components'),
-      'asset': resolve(__dirname, 'src/assets'),
+      'assets': resolve(__dirname, 'src/assets'),
+      'hooks': resolve(__dirname, 'src/hooks'),
     },
   },
 })

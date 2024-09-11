@@ -11,8 +11,7 @@ import ComponentManagement from "components/ComponentManagement";
 
 export const Profile = () => {
   return (
-    <MainLayout title="User Profile">
-      <ComponentManagement.Header link={'/'} title={'Settings'}/>
+    <MainLayout documentTitle="User Profile" headerLink="/" headerTitle="Profile">
       <div className="p-4">
         <div>
           <ComponentManagement.ParagrafJudul title="General" />

@@ -1,4 +1,4 @@
-import Hotel from "../assets/hotel.jpeg";
+import Hotel from "assets/hotel.jpeg";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faLocationDot,
@@ -7,14 +7,12 @@ import {
   faWifi,
 } from "@fortawesome/free-solid-svg-icons";
 import ParagrafJudul from "components/paragraf/ParagrafJudul";
-import Header from "components/header/Header";
 import ComponentManagement from "components/ComponentManagement";
+import MainLayout from "layouts/MainLayouts";
 
 export const Detail = () => {
   return (
-    <>
-      <Header link={'/'} title={'Detail'}/>
-
+    <MainLayout headerLink="/" headerTitle="Detail">
       <div className="p-4">
         <img src={Hotel} alt="Deskripsi Gambar" className="rounded-xl" />
         <div className="flex font-semibold text-slate-700 text-xs my-3 gap-2">
@@ -83,6 +81,6 @@ export const Detail = () => {
       <div className="px-4 mt-3 mb-10">
         <ComponentManagement.SimpleButton nama="Booking Now" warna="bg-blue-500" />
       </div>
-    </>
+    </MainLayout>
   );
 };
