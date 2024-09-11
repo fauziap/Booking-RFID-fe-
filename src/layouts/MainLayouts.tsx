@@ -17,7 +17,7 @@ const MainLayout = (prop: MainLayoutInterface) => {
     useDocumentTitle(documentTitle);
 
     return (
-        <main className="mb-[10rem]">
+        <main className="mb-[10rem] dark:bg-black bg-white">
             {headerTitle && <ComponentManagement.Header link={headerLink} title={headerTitle} />}
             {children}
             <ComponentManagement.MobileNavigations />
